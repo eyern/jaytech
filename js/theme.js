@@ -104,17 +104,6 @@
             });
         } 
     }; 
-    
-    //* Testimonial Carosel
-    function testimonialsCarosel(){
-        if ( $('.testimonial_carosel').length ){
-            $('.testimonial_carosel').owlCarousel({
-                loop:true,
-                items:1,
-                autoplay:true,
-            });
-        };
-    };
     //* Testimonial Carosel
     function partnersCarosel(){
         if ( $('.partners').length ){
@@ -190,7 +179,6 @@
     searchFrom ();
     new WOW().init();
 	home_main_slider();
-    testimonialsCarosel ();
     portfolio_isotope ();
     counterUp ();  
     partnersCarosel ();

@@ -311,9 +311,9 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
   max-width: 100%;
 }
 .header_aera .navbar-collapse .navbar-nav.navbar-right li a {
-  font: 700 14px/100px "Roboto", sans-serif;
+  font: 700 15px/100px "Roboto", sans-serif;
   color: #222222;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 0;
   padding-left: 30px;
 }
@@ -700,9 +700,9 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 }
 .what_we_area .construction_iner .construction .cns-content a {
   font: 700 18px "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #222222;
-  padding-top: 17px;
+  text-transform: capitalize;
+  color: #F31515;
+  padding-top: 13px;
   display: block;
 }
 .what_we_area .construction_iner .construction .cns-content p {
@@ -1085,73 +1085,85 @@ a:focus, a:hover, .btn:focus, .btn:hover, button:focus, button:hover {
 
 /*--------------------------------------------------*/
 /* Testimonial Area */
-.testimonial_area {
-  padding-bottom: 90px;
-  background: #fefefe;
+
+.testimonials {
+  padding: 100px 0px;
 }
-.testimonial_area .testimonial_carosel {
-  padding-top: 60px;
+
+.testimonials .title h1::before {
+  left: 30%;
 }
-.testimonial_area .testimonial_carosel .item .media {
-  max-width: 260px;
-  margin: 0 auto;
-  padding-bottom: 35px;
+
+.testimonials-content {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-.testimonial_area .testimonial_carosel .item .media .media-left {
-  padding-right: 30px;
+
+.testimonials-box {
+  float: left;
+  transition: margin 1s ease;
 }
-.testimonial_area .testimonial_carosel .item .media .media-left a img {
-  width: auto;
+
+.testimonials-img {
+  background-color: #fff;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  padding: 40px 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+  width: 100%;
 }
-.testimonial_area .testimonial_carosel .item .media .media-body {
-  padding-top: 40px;
+
+.test-img {
+  flex: 0 0 118px;
+  max-width: 118px;
 }
-.testimonial_area .testimonial_carosel .item .media .media-body h4 {
-  font: 700 14px "Roboto", sans-serif;
-  text-transform: uppercase;
-  color: #222222;
-}
-.testimonial_area .testimonial_carosel .item .media .media-body h6 {
-  font: 400 italic 14px "Roboto", sans-serif;
-  color: #555555;
-  padding-top: 5px;
-}
-.testimonial_area .testimonial_carosel .item p {
-  font: 400 italic 14px/26px "Roboto", sans-serif;
-  color: #F31515;
-  max-width: 945px;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.testimonial_area .testimonial_carosel .item p i {
-  color: #555555;
-  font-size: 18px;
-  display: block;
-}
-.testimonial_area .testimonial_carosel .item p .fa-quote-left {
-  text-align: right;
-  padding-top: 5px;
-}
-.testimonial_area .testimonial_carosel .item p .fa-quote-right {
-  text-align: left;
-  padding-bottom: 5px;
-}
-.testimonial_area .testimonial_carosel .owl-controls {
-  text-align: center;
-}
-.testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot {
-  height: 10px;
-  width: 10px;
-  border: 2px solid #555555;
-  margin-left: 15px;
-  display: inline-block;
-  transition: all 300ms linear 0s;
+
+.test-img img {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
-.testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot:hover, .testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot:focus, .testimonial_area .testimonial_carosel .owl-controls .owl-dots .owl-dot.active {
-  background: #F31515;
-  border: 2px solid #F31515;
+
+.testimonials-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.testimonials-text h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0 5px;
+}
+
+.slider {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.slider div {
+  height: 15px;
+  width: 15px;
+  background-color: #8B0000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px 6px;
+  cursor: pointer;
+}
+
+.slider div.active {
+  background-color: #fff;
+
 }
 
 /* End Testimonial Area */
